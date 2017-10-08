@@ -1,0 +1,64 @@
+/*giving the container its intail properties*/
+.divForm, #divBookmark{
+    background-color: #f9f9f9;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 500px;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+label
+{
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    margin: 5px 20px;
+}
+.myForm  .inputForm {
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.myForm #sbutton{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 18px;
+}
+
+.artic h2,.artic div{
+    display: inline-block;
+    text-align: center;
+    width: 170px;
+    margin: 5px 20px;
+}
+.artic {
+    margin-left: 30px;
+    margin-top: 10px;
+    
+}
+h2{
+        border: 2px green solid;
+        padding: 10px 20px;
+}
+.artic div {
+    margin-left: 20px;
+}
+.rbutton,.gbutton{
+    padding: 4px 6px;
+    margin: 0 ;
+    color: white;
+    border: 0;
+    font-weight: bolder;
+}
+.rbutton{
+    background-color: red;
+
+}
+.gbutton{
+    background-color: green;
+}
