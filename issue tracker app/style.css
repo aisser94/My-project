@@ -1,0 +1,73 @@
+/*body{
+  background-color: rgb(67, 70, 67);
+}*/
+
+
+.container{
+  /*give the initial values for container*/
+  width: 810px;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+  font-family:"Lucida Grande", sans-serif;
+}
+
+/*styling the header pice */
+.headerDiv{
+}
+.headerDiv h1{
+  display: inline;
+}
+.headerDiv p{
+  display: inline;
+  padding-left: 20px;
+  color: rgb(107, 107, 107);
+  font-weight: bold;
+  font-family:Arial;
+}
+
+/*start to sytling the form section */
+.formDiv{
+  background-color: rgb(236, 236, 236);
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 10px 35px 35px 35px;
+  margin-top: 8px;
+}
+.formDiv h2{
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.inputLabel{
+  display: block;
+  font-weight: 800;
+  font-size: 0.8rem;
+  padding-bottom: 8px;
+}
+
+.formInput{
+  background-color: white;
+  width: 90%;
+  height: 20px;
+  display: block;
+  margin-bottom: 8px;
+  padding-left: 5px;
+}
+select.formInput{
+  width: 91%;
+}
+.addButton{
+  background-color: rgb(17, 62, 140);
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  border: 0;
+}
+
+
+
+/*syling the foorter */
+.footerDiv{
+color:rgb(107, 107, 107);}
