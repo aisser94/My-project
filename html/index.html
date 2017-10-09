@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
   </head>
 
-  <body>
+  <body onload="createBookmark()">
     <div class="container">
       <div class="divForm">
         <form class="myForm">
@@ -14,12 +14,14 @@
             <label>Site Name:</label>
             <input id="siteName" class="inputForm" placeholder="Site Name ..." />
           </p>
+          <p>
             <label class="urlAgain">Site Url: </label>
             <input id="siteUrl" class="inputForm " placeholder="Site Url ..." />
           </p>
           <button id="sbutton" type="submit" >Submit</button>
         </form>
       </div>
+
 
       <div id="divBookmark">
 
