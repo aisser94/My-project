@@ -4,9 +4,10 @@
     <title> Index</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
 
-  <body>
+  <body onload="issueContent()">
     <div class="container">
       <div class="headerDiv">
         <h1>Issue Tracker</h1>
@@ -32,6 +33,13 @@
 
         <button class="addButton" type="button">Add</button>
       </div>
+      <div id="issuecontent">
+      </div>
+
+
+
+
+      <!-- foorter part -->
       <div class="footerDiv">
         <h6>&copy; Aisser Altaay 2017</h6>
       </div>
@@ -43,5 +51,24 @@
 
 
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
   </body>
 </html>
+
+
+
+<!--
+<p id="idDemo">Issue ID: 5445-8758-52454-7572432</p>
+<p id="statusDemo">Open</p>
+<p id="discriptionDemo">theere is proplem with my cal programm</p>
+
+<div class="nameDemo">
+  <i class="material-icons">alarm</i>
+  <p id="severityDemo">Low </p>
+  <i class="material-icons">account_circle</i>
+  <p id="assignedTODemo">Aisser</p>
+</div>
+
+
+<button class="addButton yButton" type="button">Close</button>
+<button class="addButton rButton" type="button">Delete</button> -->
