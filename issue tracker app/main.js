@@ -15,6 +15,8 @@ function submitValue(e){
     var myID =" "+Math.random().toString(16).substr(2, 4)+" - "+
     Math.random().toString(16).substr(2, 4)+" - "+
     Math.random().toString(16).substr(2, 4);
+    //cheking the validation of the inputs values
+    if(!checkValidation(discInput,assignInput)){return false;}
     //create an object
     var myObject={
       discription:discInput,
@@ -67,6 +69,20 @@ function submitValue(e){
     localStorage.setItem('issueTracker',JSON.stringify(issueTracker));
   }
 
+//check Validation function
+function checkValidation(discInput,assignInput){
+  if(!discInput && !assignInput){
+    alert('Please fill the form');
+    return false;
+  }else if ( !discInput){
+    alert('Please fill the Discription text ');
+    return false;
+  }else if ( !assignInput) {
+    alert('Please fill a Name for assigned To');
+    return false;
+  }elsereturn true;
+}
+
 //create function to draw the issues
 function issueContent(){
   //get back the array from localStorage
@@ -79,24 +95,15 @@ function issueContent(){
                                 '<p id="idDemo">Issue ID:'+issueTracker[i].id+' </p>'+
                                 '<p class="statusDemo">'+issueTracker[i].status+'</p>'+
                                 '<p id="discriptionDemo">'+issueTracker[i].discription+'</p>'+
-
                                 '<div class="nameDemo">'+
                                   '<i class="material-icons">alarm</i>'+
                                   '<p id="severityDemo">'+issueTracker[i].severity +'</p>'+
                                   '<i class="material-icons">account_circle</i>'+
                                   '<p id="assignedTODemo">'+issueTracker[i].assignedTo+'</p>'+
                                 '</div>'+
-
                                 '<button class="addButton yButton" onclick="closeIssue(\''+i+'\')" type="button">Close</button>'+
                                 '<button class="addButton rButton" onclick="deleteIssue(\''+i+'\')" type="button">Delete</button>'+
                               '</div>'
 
     }
 }
-
-// var ID = function () {
-//   // Math.random should be unique because of its seeding algorithm.
-//   // Convert it to base 36 (numbers + letters), and grab the first 9 characters
-//   // after the decimal.
-//   return '_' + ID =Math.random().toString(36).substr(2, 9);
-// };

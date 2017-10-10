@@ -9,66 +9,33 @@
 
   <body onload="issueContent()">
     <div class="container">
+      <!-- header part -->
       <div class="headerDiv">
         <h1>Issue Tracker</h1>
-        <p>
-          by Aisser Altaay
-        </p>
+        <p>by Aisser Altaay</p>
       </div>
-
+      <!-- content part -->
       <div class="formDiv">
         <h2>Add New Issue</h2>
-        <label class="inputLabel">Discription</label>
-        <input class="formInput" type="text" placeholder="Discripe the issue .." />
-
+        <label class="inputLabel">Description</label>
+        <input class="formInput" required type="text" placeholder="Descripe the issue .." />
         <label class="inputLabel">Severity</label>
         <select class="formInput" >
             <option value="Low">Low</option>
             <option value="Medium">Medium</option>
             <option value="High">High</option>
-            </select>
-
+          </select>
         <label class="inputLabel">Assigned to</label>
-        <input class="formInput" type="text" placeholder="Discripe the issue .." />
-
+        <input class="formInput" required type="text" placeholder=" ex. Aisser Altaay .." />
         <button class="addButton" type="button">Add</button>
       </div>
       <div id="issuecontent">
       </div>
-
-
-
-
       <!-- foorter part -->
       <div class="footerDiv">
         <h6>&copy; Aisser Altaay 2017</h6>
       </div>
     </div>
-
-
-
-
-
-
     <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
   </body>
 </html>
-
-
-
-<!--
-<p id="idDemo">Issue ID: 5445-8758-52454-7572432</p>
-<p id="statusDemo">Open</p>
-<p id="discriptionDemo">theere is proplem with my cal programm</p>
-
-<div class="nameDemo">
-  <i class="material-icons">alarm</i>
-  <p id="severityDemo">Low </p>
-  <i class="material-icons">account_circle</i>
-  <p id="assignedTODemo">Aisser</p>
-</div>
-
-
-<button class="addButton yButton" type="button">Close</button>
-<button class="addButton rButton" type="button">Delete</button> -->

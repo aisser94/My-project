@@ -1,10 +1,5 @@
-/*body{
-  background-color: rgb(67, 70, 67);
-}*/
-
-
+/*give the initial values for container*/
 .container{
-  /*give the initial values for container*/
   width: 810px;
   margin: 0 auto;
   display: block;
@@ -12,9 +7,7 @@
   font-family:"Lucida Grande", sans-serif;
 }
 
-/*styling the header pice */
-.headerDiv{
-}
+/*styling the header piece */
 .headerDiv h1{
   display: inline;
 }
@@ -27,6 +20,7 @@
 }
 
 /*start to sytling the form section */
+/*first style the container of the form*/
 .formDiv{
   background-color: rgb(236, 236, 236);
   border-radius: 5px;
@@ -36,17 +30,19 @@
   padding: 1px 35px 10px 35px;
   margin-top: 5px;
 }
+/*style the h2 */
 .formDiv h2{
   margin-bottom: 10px;
   font-size: 1.5rem;
 }
+/*style the label of inputs*/
 .inputLabel{
   display: block;
   font-weight: 800;
   font-size: 0.8rem;
   padding-bottom: 1px;
 }
-
+/*style the inputs*/
 .formInput{
   background-color: white;
   width: 90%;
@@ -58,6 +54,7 @@
 select.formInput{
   width: 91%;
 }
+/*sytle the add button*/
 .addButton{
   background-color: rgb(17, 62, 140);
   color: white;
@@ -74,6 +71,7 @@ select.formInput{
 
 
 /*styling the issue content*/
+/*first style the content div*/
 #addContent{
   background-color: rgb(231, 231, 231);
   border: 2px soild rgb(223, 223, 223);
@@ -81,12 +79,14 @@ select.formInput{
   padding: 3px 15px;
   margin-top: 10px;
 }
+/*id part*/
 #idDemo{
   font-size: 0.7rem;
   font-weight: bold;
   margin-bottom: 0;
   text-transform: uppercase;
 }
+/*status part*/
 .statusDemo{
   background-color: rgb(46, 185, 230);
   border: 0;
@@ -97,12 +97,14 @@ select.formInput{
   margin-top: 6px;
   margin-bottom: 0;
 }
+/*discription part*/
 #discriptionDemo{
   font-size: 1.3rem;
   font-weight: bold;
   margin-top: 13px;
   margin-bottom: 4px;
 }
+/*severity and assigned to part*/
 #severityDemo,#assignedTODemo
 {
   font-size: 0.9rem;
@@ -110,32 +112,27 @@ select.formInput{
   display: inline;
   vertical-align: middle;
   margin-right: 18px;
-
 }
 .material-icons{
   color:  rgb(17, 62, 140);
   vertical-align: middle;
   padding-bottom: 10px;
 }
-.yButton {
-    background-color: rgb(240, 155, 43);
-    margin-right: 5px;
-  }
+/*buutons part*/.yButton {
+  background-color: rgb(240, 155, 43);
+  margin-right: 5px;
+}
 .rButton {
   background-color: rgb(205, 55, 29);
   margin-bottom: 6px;
 }
 
 .yButton:hover{
-    background-color: rgb(191, 117, 30);
-  }
-  .rButton:hover {
-    background-color: rgb(186, 36, 10);
-  }
-
-
-
-
+  background-color: rgb(191, 117, 30);
+}
+.rButton:hover {
+  background-color: rgb(186, 36, 10);
+}
 
 /*syling the foorter */
 .footerDiv{
